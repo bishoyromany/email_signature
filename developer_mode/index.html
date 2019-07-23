@@ -5,42 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="main.css"> -->
+
     <style>
-    
         @import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
         * {
         padding: 0px;
         margin: 0px;
-        box-sizing: content-box;
+        box-sizing: content-box !important;
         font-family: 'Montserrat', Arial, sans-serif; }
 
         .container {
-        width: 60%;
+        width: 480px !important;
         display: block;
-        margin: 0px auto; }
+        margin: 10px auto;
+        -webkit-box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 24px -16px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        overflow: hidden; }
 
         .img-container {
-        display: inline-block;
-        width: CALC(100% + 8px);
+        display: block;
         background-color: #9f509f;
-        height: 110px;
-        overflow: hidden; }
+        height: 100px;
+        overflow: hidden;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px; }
         .img-container img {
-            width: 58%;
-            height: 110px;
+            width: 56%;
             display: block;
             margin: 0px auto;
-            transform: scale(1.3); }
+            transition: all 0.5s ease-in-out !important; }
+            .img-container img:hover {
+            transition: all 0.5s ease-in-out !important;
+            transform: scale(1.2) !important; }
 
         .head {
+        margin-top: 1px;
         background-color: #834eab;
         font-weight: bold;
-        display:block;
-        color: #FFF;
-        padding: 10px;
+        display: block;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
         font-size: 16px;
         font-weight: 700;
-        line-height: 17px;}
+        line-height: 17px;
+        text-align: center; }
         .head span {
             display: block;
             opacity: 0.5;
@@ -49,9 +59,11 @@
         .email-links {
         list-style: none;
         background-color: #d6e3e1;
-        width: CALC(70% - 50px);
-        padding: 20px 10px 20px 10px;
-        float: left; }
+        padding: 10px 10px 10px 0px;
+        width: 290px !important;
+        float: left !important;
+        border-bottom-left-radius: 10px;
+        height: 185px; }
         .email-links li {
             display: block;
             padding: 10px;
@@ -60,6 +72,9 @@
             position: absolute;
             top: 30%;
             left: 8px; }
+            .email-links li .icon img {
+                width: 16px;
+                height: 16px; }
             .email-links li .text {
             margin-left: 25px;
             display: inline-block;
@@ -67,7 +82,11 @@
             font-size: 13px;
             line-height: 14px;
             font-weight: 400;
-            color: #647875; }
+            color: #647875;
+            transition: all 0.5s ease-in-out !important; }
+            .email-links li .text:hover {
+                transition: all 0.5s ease-in-out !important;
+                margin-left: 35px !important; }
             .email-links li .text a {
                 text-decoration: none;
                 font-family: 'Montserrat', Arial, sans-serif;
@@ -78,10 +97,12 @@
 
         .email-social {
         list-style: none;
-        background-color: #FFF;
-        width: 28%;
-        padding: 30px 0px 20px 40px;
-        float: left; }
+        background-color: #f8f4f4;
+        width: 160px;
+        padding: 10px 10px 10px 10px;
+        float: left;
+        border-bottom-right-radius: 10px;
+        height: 185px; }
         .email-social li {
             display: block;
             padding: 10px;
@@ -90,6 +111,9 @@
             position: absolute;
             top: 30%;
             left: 8px; }
+            .email-social li .icon img {
+                width: 16px;
+                height: 16px; }
             .email-social li .text {
             margin-left: 25px;
             display: inline-block;
@@ -97,7 +121,11 @@
             font-size: 13px;
             line-height: 14px;
             font-weight: 400;
-            color: #647875; }
+            color: #647875;
+            transition: all 0.5s ease-in-out !important; }
+            .email-social li .text:hover {
+                transition: all 0.5s ease-in-out !important;
+                margin-left: 35px !important; }
             .email-social li .text a {
                 text-decoration: none;
                 font-family: 'Montserrat', Arial, sans-serif;
@@ -108,17 +136,21 @@
 
         /*# sourceMappingURL=main.css.map */
 
-    
-    
+
+
     </style>
+
     <title>Email Sig Draft</title>
+
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="width : 480px !important;">
 
         <!-- the page imagee -->
         <div class="img-container left-side">
-            <img src="https://i.ibb.co/ck2bdLM/sign-new.png" alt="img">
+            <a href="http://www.kineticAI.com">
+                <img src="https://i.imgur.com/3elHu8r.png" alt="img">
+            </a>
         </div>
         <!-- the page header -->
         <h2 class="head">
@@ -179,7 +211,7 @@
                     <img src="https://i.imgur.com/0Ndw1XH.png" alt="facebook">
                 </span>
                 <span class="text">
-                    <a href="http://www.kineticai.com">
+                    <a href="https://www.facebook.com/KineticAIcorp" target="_blank">
                         /facebook
                     </a>
                 </span>
@@ -190,23 +222,25 @@
                     <img src="https://i.imgur.com/rQtYzsf.png" alt="twitter">
                 </span>
                 <span class="text">
-                    <a href="mailto:Contact@kineticai.com">
-                        /twitteruser
+                    <a href="https://twitter.com/KineticAI" target="_blank">
+                        /twitter
                     </a>
                 </span>
             </li>
             <li>
                 <span class="icon">
+                    <img src="https://i.imgur.com/HAPELeH.png" alt="linkedin" target="_blank">
                 </span>
                 <span class="text">
-                    /+username
+                    /linkedin 
                 </span>
             </li>
             <li>
                 <span class="icon">
+                    <img src="https://i.imgur.com/n12mEgT.png" alt="pinterest" target="_blank">
                 </span>
                 <span class="text">
-                    /pinterestuser
+                    /medium 
                 </span>
             </li>
         </ul>
