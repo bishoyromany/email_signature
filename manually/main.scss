@@ -1,0 +1,166 @@
+
+$transtion : all 0.5s ease-in-out; // transition time
+$global_width : 480px !important; // theme width
+$ul_height : 185px; // list height
+$first_ul_width : 290px ; // first list width
+$second_ul_width : 160px ; // second list width
+$background-color : #9f509f; // image background color
+$head_background : rgb(131, 78, 171);
+$color : #fff; // the head color
+$first_ul_background : rgb(214, 227, 225); // the first list background color
+$list_color : #647875; // the list text color
+$second_ul_background : rgb(248, 244, 244); // the seond list background
+
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: content-box !important;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+// container of all the page
+.container{
+    width: $global_width;
+    display: block;
+    margin: 10px auto;
+    -webkit-box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -16px rgba(0,0,0,0.75);
+    border-radius : 10px;
+    overflow : hidden;
+}
+
+// img section
+.img-container{
+    display: block;
+    background-color: $background-color;
+    height: 100px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    img{
+        width: 56%;
+        display: block;
+        margin: 0px auto;
+        transition : $transtion !important;
+        &:hover{
+            transition: $transtion !important;
+            transform : scale(1.2) !important;
+        }
+    }
+}
+
+// the header style
+.head{
+    margin-top : 1px;
+    background-color: $head_background;
+    font-weight: bold;
+    display : block;
+    color : $color;
+    padding : 10px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height : 17px;
+    text-align : center;
+    span{
+        display : block;
+        opacity : 0.5;
+        margin-top : 10px;
+    }
+}
+
+// the first list style
+.email-links{
+    list-style : none;
+    background-color: $first_ul_background;
+    padding : 10px 10px 10px 0px;
+    width: $first_ul_width !important;
+    float: left !important;
+    border-bottom-left-radius : 10px;
+    height : $ul_height;
+    li{
+        display : block; 
+        padding : 10px;
+        position: relative;
+        .icon{
+            position : absolute;
+            top: 30%;
+            left: 8px;
+            img{
+                width : 16px;
+                height : 16px;
+            }
+        }
+        .text{
+            margin-left : 25px;
+            display : inline-block;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 13px;
+            line-height: 14px;
+            font-weight: 400;
+            color: $list_color;
+            transition : $transtion !important;
+            &:hover{
+                transition: $transtion !important;
+                margin-left : 35px !important;
+            }
+            a{
+                text-decoration : none;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-size: 13px;
+                line-height: 14px;
+                font-weight: 400;
+                color: $list_color;
+            }
+        }
+    }
+}
+
+// the second list style
+.email-social{
+    list-style : none;
+    background-color: $second_ul_background;
+    width : $second_ul_width;
+    padding : 10px 10px 10px 10px;
+    float : left;
+    border-bottom-right-radius : 10px;
+    height : $ul_height;
+    li{
+        display : block; 
+        padding : 10px;
+        position: relative;
+        .icon{
+            position : absolute;
+            top: 30%;
+            left: 8px;
+            img{
+                width : 16px;
+                height : 16px;
+            }
+        }
+        .text{
+            margin-left : 25px;
+            display : inline-block;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 13px;
+            line-height: 14px;
+            font-weight: 400;
+            color: $list_color;
+            transition : $transtion !important;
+            &:hover{
+                transition: $transtion !important;
+                margin-left : 35px !important;
+            }
+            a{
+                text-decoration : none;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-size: 13px;
+                line-height: 14px;
+                font-weight: 400;
+                color: $list_color;
+            }
+        }
+    }
+}
