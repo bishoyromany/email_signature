@@ -10,5 +10,5 @@ git clone https://github.com/bishoyromany/email_signature
 - open you email , and add the signature using ctrl+v 
 
 ## To Preview Signature 
-- Open preview.html File
+- [Click Here](https://bishoyromany.github.io/email_signature/preview.html) Or Open preview.html File
  
